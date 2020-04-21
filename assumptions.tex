@@ -131,21 +131,21 @@ Pr
 \begin{bmatrix}
 &\mathbb{G}\xleftarrow{\$}GGen(\lambda)\\
 u^l = 1 : &u \xleftarrow{\$}\mathbb{G}\\ 
-& l \xleftarrow{} \mathcal{A}(\mathbb{G})\\
+& l \xleftarrow{} \mathcal{A}(\mathbb{G},u)\\
 \end{bmatrix}\leq \mathrm{negl}(\lambda)
 $$
 
 \end{definition}
 
 \begin{definition}
-The \emph{Low Order assumption}. For any probabilistic polynomial time adversary $\mathcal{A}$ finding any element of low order is hard: 
+The \emph{Low Order assumption}. For any probabilistic polynomial time adversary $\mathcal{A}$ and for any $0<\epsilon$, finding any element of subexponentially low order is hard: 
 $$
 Pr
 \begin{bmatrix}
 &\mathbb{G}\xleftarrow{\$}GGen(\lambda)\\
 u^l = 1,\;u\neq 1 :
 & (u,l) \xleftarrow{} \mathcal{A}(\mathbb{G})\\
-& \text{and }l<2^{poly(\lambda)}
+& \text{and }l<2^{\log^{1+\epsilon}(\lambda)}
 \end{bmatrix}\leq \mathrm{negl}(\lambda)
 $$
 
